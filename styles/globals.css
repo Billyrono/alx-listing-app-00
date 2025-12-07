@@ -1,14 +1,4 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
-
-/* ===========================================
-   ALX LISTING APP STYLES
-   =========================================== */
-
-/* ===========================================
-   BASE STYLES
-   =========================================== */
 
 html {
   scroll-behavior: smooth;
@@ -32,10 +22,6 @@ body {
   outline-offset: 2px;
 }
 
-/* ===========================================
-   UTILITY CLASSES
-   =========================================== */
-
 /* Hide scrollbar but allow scrolling */
 .scrollbar-hide {
   -ms-overflow-style: none;
@@ -46,7 +32,7 @@ body {
   display: none;
 }
 
-/* Line clamp utilities with standard property */
+/* Line clamp utilities */
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;

@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
       {/* Decorative top border */}
       <div className="h-1 bg-gradient-to-r from-rose-500 to-orange-500" aria-hidden="true"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-1 px-2 sm:px-4 lg:px-4 py-6 sm:py-8 lg:py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* Brand Section */}
           <div className="sm:col-span-2 lg:col-span-1">
@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 sm:mt-12 lg:mt-16 pt-8 border-t border-gray-800">
+        <div className="mt-5 sm:mt-6 lg:mt-8 pt-4 border-t border-gray-800">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
             <p className="text-gray-500 text-sm text-center sm:text-left">
               © {currentYear} {APP_NAME}. All rights reserved.

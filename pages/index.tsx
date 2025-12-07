@@ -68,11 +68,6 @@ export default function Home() {
             here!
           </h1>
 
-          {/* Description - From Spec */}
-          <p className="text-base sm:text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-            The best prices for over 2 million properties worldwide.
-          </p>
-
           {/* Search Box */}
           <div className="bg-white rounded-2xl p-3 sm:p-4 max-w-3xl mx-auto shadow-2xl">
             <div className="flex flex-col sm:flex-row gap-3">
@@ -137,22 +132,6 @@ export default function Home() {
               </button>
             </div>
           </div>
-
-          {/* Quick Stats */}
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-10 mt-10 sm:mt-12">
-            <div className="text-center">
-              <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">2M+</p>
-              <p className="text-xs sm:text-sm text-white/70 mt-1">Properties</p>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">150+</p>
-              <p className="text-xs sm:text-sm text-white/70 mt-1">Countries</p>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">50K+</p>
-              <p className="text-xs sm:text-sm text-white/70 mt-1">Happy Guests</p>
-            </div>
-          </div>
         </div>
 
         {/* Scroll Indicator */}
@@ -166,7 +145,7 @@ export default function Home() {
       {/* Filter Section */}
       <section
         id="main-content"
-        className="bg-gray-50 py-6 sm:py-8 border-b border-gray-100"
+        className="bg-gray-50 py-3 sm:py-4 border-b border-gray-100"
         aria-labelledby="filter-heading"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,7 +182,7 @@ export default function Home() {
 
       {/* Listing Section */}
       <section
-        className="bg-gray-50 py-10 sm:py-12 lg:py-16"
+        className="bg-gray-50 py-5 sm:py-6 lg:py-8"
         aria-labelledby="listings-heading"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -304,8 +283,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         {/* Favorite Button */}
         <button
           className={`absolute top-3 sm:top-4 right-3 sm:right-4 w-9 sm:w-10 h-9 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white shadow-lg ${isLiked
-              ? 'bg-rose-500 text-white scale-110'
-              : 'bg-white/90 text-gray-600 hover:bg-white hover:text-rose-500'
+            ? 'bg-rose-500 text-white scale-110'
+            : 'bg-white/90 text-gray-600 hover:bg-white hover:text-rose-500'
             }`}
           onClick={(e) => {
             e.stopPropagation();
@@ -367,10 +346,10 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
 
         {/* Price & CTA */}
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between gap-1">
           <div>
             <span className="text-xl sm:text-2xl font-bold text-gray-900">${property.price.toLocaleString()}</span>
-            <span className="text-gray-500 text-xs sm:text-sm ml-1">/night</span>
+            <span className="text-gray-500 text-xs sm:text-sm ml-0.5">/night</span>
           </div>
           <button
             className="text-rose-500 hover:text-white hover:bg-rose-500 border border-rose-500 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
